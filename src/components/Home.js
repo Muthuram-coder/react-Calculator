@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import classes from'./Home.module.css' 
 import Button from './Button'
+import ButtonBox from './ButtonBox'
 function Home() {
     const [res, setres] = useState("")
 
@@ -34,11 +35,19 @@ function Home() {
               {res}
             </div>
         </div>
-        <div className={classes.btns}>
-            {buttons.map((ele,index)=>{return <Button handler={handler}  value={ele} key={index}/>})}
-        </div>
+        <ButtonBox>
+       
+        {buttons.map((ele,index)=>{return <Button handler={handler}  value={ele} key={index}/>})}
+          
+       
+          </ButtonBox>
+        
+           
+        
         </div>
     </div>
+
+
   )
 }
 
