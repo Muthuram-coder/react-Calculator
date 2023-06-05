@@ -14,7 +14,7 @@
 
 .inner {
     height: 640px;
-    width: 425px;
+    width: 100%;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     box-shadow: 20px 20px 60px rgb(138, 130, 130),
